@@ -1,7 +1,12 @@
+// puck.config.ts
 import type { Config } from "@measured/puck";
+import { FooterBlock } from "./app/components/puck/FooterBlock"; // Asegúrate de que la ruta sea correcta
+import { SectionBlock } from "./app/components/puck/SectionBlock";
 
 type Props = {
   HeadingBlock: { title: string };
+  FooterBlock: { text: string }; // Añadir también el tipo
+  SectionBlock: { content: string; maxWidth?: string };
 };
 
 export const config: Config<Props> = {
@@ -19,6 +24,8 @@ export const config: Config<Props> = {
         </div>
       ),
     },
+    FooterBlock, 
+    SectionBlock,
   },
 };
 

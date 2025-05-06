@@ -1,0 +1,13 @@
+/* components/ui/Section.module.css */
+.section-container {
+    padding: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: aqua;
+  }
+  
+  .section-inner {
+    width: 100%;
+  }
+  
